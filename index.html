@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IT-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Weather App</title>
+        <link rel="stylesheet" href="styles.css"/>
+        </head>
+    <body>
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <main><section class="weather-section">
+            <div class="page">
+              <h1>LATEST WEATHER</h1>
+              <div class="archive">
+                <article class="article">
+                  <section id="stats">
+                    <div class="summary">
+                      <h2>Weather summary</h2>
+                      <h3 id="five-city"></h3>
+                      <p>Currently: Windy <span id="current-desc"></span></p>
+                      <p>
+                        Tempature:
+                        <span id="current-temp"></span> 43°F
+                      </p>
+                      <p>Wind Chill: 40<span id="current-windChill"></span> °F</p>
+                      <p>Humidity: 20<span id="current-humid"></span>%</p>
+                      <p>Wind Speed: 3<span id="current-windSpeed"></span> mph</p>
+                    </div>
+                  </section>
+                  <div>
+                    <img src="https://picsum.photos/400" alt="Random Image" />
+                  </div>
+                </article>
+    
+                <!-- 5 day forecast -->
+                <div class="article-five-day">
+                  <article id="forecastContainer">
+                    <h2 id="forecastTitle">5 Day Forecast</h2>
+                    <h3 id="city"></h3>
+                    <div class="flex">
+                      <div class="flex-col">
+                        <span id="dayTitle1" class="col-head"></span>
+                        <img id="weatherIcon1" src="rainy.png" class="weatherIcon" height="60px" width="60px"/>
+                        <span class="temp-data">
+                          <span id="data1"></span>
+                          <span>40°F</span>
+                        </span>
+                      </div>
+                      <div class="flex-col">
+                        <span id="dayTitle2" class="col-head"></span>
+                        <img id="weatherIcon2" src="snowy.png" class="weatherIcon" height="60px" width="60px" />
+                        <div class="temp-data">
+                          <span id="data2"></span>
+                          <span>32°F</span>
+                        </div>
+                      </div>
+                      <div class="flex-col">
+                        <span id="dayTitle3" class="col-head"></span>
+                        <img id="weatherIcon3" src="sunnnycloudy.png" class="weatherIcon" height="60px" width="60px"/>
+                        <div class="temp-data">
+                          <span id="data3"></span>
+                          <span>54°F</span>
+                        </div>
+                      </div>
+                      <div class="flex-col">
+                        <span id="dayTitle4" class="col-head"></span>
+                        <img id="weatherIcon4" src="windy.png" class="weatherIcon" height="60px" width="60px"/>
+                        <div class="temp-data">
+                          <span id="data4"></span>
+                          <span>48°F</span>
+                        </div>
+                      </div>
+                      <div class="flex-col">
+                        <span id="dayTitle5" class="col-head"></span>
+                        <img id="weatherIcon5" src="sunny.png" class="weatherIcon" height="60px" width="60px" />
+                        <div class="temp-data">
+                          <span id="data5"></span>
+                          <span>°F</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="news-section">
+            <div class="page">
+              <h1>LATEST NEWS</h1>
+              <div class="archive">
+                <article class="article">
+                  <img id="head-img" src="download (2).jpg" alt="main article" width="600px" height="336px"/>
+                  <h2>
+                    <a id="header-article"></a>
+                  </h2>
+                  <p id="header-desc">PYPAL Stock Climbs On Better-Than-Feared Guidance, PayPal Stock Buyback - Investor's Business Daily</p>
+                </article>
+                <article class="article">
+                  <img
+                    id="article-img-1"
+                    src="cvs-pharmacy-logo-tnsg4kinzmfv9udd.jpg"
+                    alt="main article"
+                  />
+                  <h3>
+                    <a id="article-link-1">CVS Health raises full-year forecast after beating second-quarter expectations - CNBC</a>
+                  </h3>
+                  <p id="article-desc-1">The health-care company said it now expects adjusted earnings per share for the full year to come in between $8.40 and $8.60.</p>
+                </article>
+                <article class="article">
+                  <img
+                    id="article-img-1"
+                    src="OIP (1).jpg"
+                    alt="main article"
+                  />
+                  <h3>
+                    <a id="article-link-1">Robinhood to cut 23% of its workforce, revenue sinks 44% - CNN</a>
+                  </h3>
+                  <p id="article-desc-1">Just months after cutting 9% of its workforce, Robinhood on Tuesda announced plans to lay off another 23%.</p>
+                </article>
+                <article class="article">
+                  <img
+                    id="article-img-1"
+                    src="download.jpg"
+                    alt="main article"
+                  />
+                  <h3>
+                    <a id="article-link-1">Yum Brands misses estimates as Russian exit, foreign exchange weigh heavily on sales - Yahoo Finance</a>
+                  </h3>
+                  <p id="article-desc-1">Yum Brands, the parent company of KFC, Taco Bell and Pizza Hut, reported fiscal second quarter earnings that missed expectations. Here's what to know.</p>
+                </article>
+                <article class="article">
+                  <img
+                    id="article-img-1"
+                    src="OIP.jpg"
+                    alt="main article"
+                  />
+                  <h3>
+                    <a id="article-link-1">How a little-known stock soared 21,000% to overtake Costco - CNN</a>
+                  </h3>
+                  <p id="article-desc-1">The Wallstreetbets army is back</p>
+                </article>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <hr /></main>
+        <footer></footer>
+
+    </body>
+</html>
